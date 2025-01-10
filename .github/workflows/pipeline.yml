@@ -11,6 +11,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
       - name: Fazer checkout do repositório
         uses: actions/checkout@v2
@@ -20,12 +21,14 @@ jobs:
         with:
           node-version: '16'
 
-      - name: Instalar dependências e rodar os testes
-       run: |
-         cd lacrei-saude-api
-         npm install
-         npm test
+      - name: Navegar para o diretório do projeto
+        run: cd lacrei-saude-api
 
+      - name: Instalar dependências e rodar os testes
+        run: |
+          cd lacrei-saude-api
+          npm install
+          npm test
 
   security_scan:
     runs-on: ubuntu-latest
