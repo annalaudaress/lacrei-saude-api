@@ -46,8 +46,7 @@ jobs:
 
       - name: Rodar escaneamento de segurança com OWASP ZAP
         run: |
-          zaproxy -cmd -quickurl http://localhost:3000 -out report.html
-
+          zaproxy -cmd -quickurl http://localhost:3000 -quickout report.html
       - name: Fazer upload do relatório do OWASP ZAP
         uses: actions/upload-artifact@v3
         with:
