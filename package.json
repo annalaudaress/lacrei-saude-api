@@ -4,8 +4,7 @@
   "description": "Desafio DevSecOps",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "test": "echo \"No tests specified\" && exit 0"
+    "start": "node index.js"
   },
   "keywords": [],
   "author": "",
@@ -14,3 +13,4 @@
     "express": "^4.21.2"
   }
 }
+
