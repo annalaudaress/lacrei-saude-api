@@ -16,6 +16,11 @@ jobs:
       - name: Fazer checkout do repositório
         uses: actions/checkout@v2
 
+      - name: Listar arquivos no diretório
+        run: |
+          echo "Estrutura do diretório:"
+          ls -alh
+
       - name: Configurar o Node.js
         uses: actions/setup-node@v2
         with:
@@ -33,10 +38,11 @@ jobs:
       - name: Fazer checkout do repositório
         uses: actions/checkout@v2
 
-      - name: Instalar OWASP ZAP
+      - name: Instalar OWASP ZAP usando Snap
         run: |
           sudo apt update
-          sudo apt install -y zaproxy
+          sudo apt install -y snapd
+          sudo snap install zaproxy --classic
 
       - name: Rodar escaneamento de segurança com OWASP ZAP
         run: |
