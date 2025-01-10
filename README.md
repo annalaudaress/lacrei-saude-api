@@ -2,7 +2,7 @@
 Construir uma pipeline utilizando uma ferramenta de segurança e Docker, é como seguir uma receita de bolo.
 Primeiramente, você tem que ter o Docker instalado, e também todas dependências da sua aplicação que irá subir instaladas. Nesse caso, eu baixei do site oficial o NodeJS. 
 Depois que você tem tudo instalado (caso não estiver instalado, não se preocupe, pois você vai saber quando começar a rodar aplicações e construir imagens), crie um repositório no GitHub, clone para seu computador, e abra o Bash na pasta.
-Eu comecei com o docker build -t lacrei-saude-api . O Docker, se você seguir como uma receita de bolo um script, irá funcionar, mas terá que ter atenção com possíveis falhas de segurança, por isso seu tutorial tem que se preocupar com isso.
+Eu comecei com o docker build -t lacrei-saude-api .
 Faça o Docker build -t lacrei-saude-api .
 Isso construirá uma imagem Docker.
 Depois para rodar o container, utilize Docker run -p 3000:3000 lacrei-saude-api.
