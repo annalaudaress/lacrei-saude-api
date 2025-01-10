@@ -22,9 +22,11 @@ jobs:
           node-version: '16'
 
       - name: Instalar dependências e rodar os testes
-        run: |
-          npm install
-          npm test
+       run: |
+         cd lacrei-saude-api
+         npm install
+         npm test
+
 
   security_scan:
     runs-on: ubuntu-latest
