@@ -21,7 +21,7 @@ Faça o teste no GitHub Actions e veja se deu tudo certo. Se não deu certo, ten
 
 
 
-# Erros encontrados e dificuldades superadas: o Node não havia sido incluído no caminho Path, então sofri com a falha disso na hora de rodar o container, e tive que instalar novamente. Na hora de fazer o arquivo package.json, algumas dependências estavam faltando e utilizando o npm install, instalei a dependência express que fez o servidor estar ativo. Na hora de fazer a pipeline, tive que lidar com alguns erros, porém fui atualizando até acertar, normalmente eram erros de versão do OWASP ou do GitHub Actions, e de configuração do package.json.
+> Erros encontrados e dificuldades superadas: o Node não havia sido incluído no caminho Path, então sofri com a falha disso na hora de rodar o container, e tive que instalar novamente. Na hora de fazer o arquivo package.json, algumas dependências estavam faltando e utilizando o npm install, instalei a dependência express que fez o servidor estar ativo. Na hora de fazer a pipeline, tive que lidar com alguns erros, porém fui atualizando até acertar, normalmente eram erros de versão do OWASP ou do GitHub Actions, e de configuração do package.json.
 
-# Experiências pessoais e considerações positivas:
+> Experiências pessoais e considerações positivas:
 Eu tinha experiência em criar pipelines no GitLab somente, mas não tive problema no GitHub Actions. Eu não conhecia a OWASP ZAP, porém implantei uma pipeline com uma ferramenta de segurança chamada AquaSecurity, que fazia a mesma coisa no meu TCC de Bootcamp. Eu havia rodado na minha máquina o Terraform, e a construção de imagens Docker era feita normalmente por ele, essa foi minha primeira vez com Bash.
